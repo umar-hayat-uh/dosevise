@@ -10,24 +10,24 @@ import "./testimonial.css";
 const testimonialData = [
   {
     message:
-      "Working with this team was a fantastic experience. Their attention to detail and commitment to quality exceeded our expectations.",
-    quote: `From the initial consultation to the final delivery, every step was handled professionally. The end result was a product that not only met our needs but also impressed our stakeholders. Highly recommended!`,
-    name: "Esther Howard",
-    designation: "Managing Director, ABC Company",
+      "Dosevise has transformed the way we calculate complex medication dosages, saving time and reducing errors.",
+    quote: `The platform's intuitive interface and guideline-driven calculations have significantly improved our workflow. Our clinical team now feels more confident when prescribing for patients with renal or hepatic impairment.`,
+    name: "Dr. Sarah Thompson",
+    designation: "Chief Pharmacist, City Hospital",
   },
   {
     message:
-      "Their expertise in UI/UX design helped us transform our digital presence and improve user engagement.",
-    quote: `The team demonstrated a deep understanding of our requirements and delivered a solution that was both visually appealing and highly functional. Communication was clear throughout the project.`,
-    name: "Ali Haider",
-    designation: "COO, XYZ Company",
+      "With Dosevise, pediatric and geriatric dosing has never been easier or safer.",
+    quote: `We were able to implement age-appropriate dosing across all our wards seamlessly. The clinical decision support features reduce manual calculations and potential errors, making our patient care more precise and efficient.`,
+    name: "Dr. Ahmed Malik",
+    designation: "Head of Pediatrics, Green Valley Clinic",
   },
   {
     message:
-      "Professional, reliable, and creative—everything you want in a development partner.",
-    quote: `They delivered our project on time and went above and beyond to ensure our satisfaction. The new features have made a significant difference for our users. We look forward to working together again.`,
-    name: "Elon Max",
-    designation: "Managing Director, KFC Company",
+      "Dosevise is a reliable partner for evidence-based dosing decisions.",
+    quote: `Our team trusts Dosevise for every dose adjustment, whether it's general medication, insulin therapy, or QT interval risk management. The recommendations are clear, accurate, and backed by clinical guidelines.`,
+    name: "Dr. Emily Rodriguez",
+    designation: "Cardiology Consultant, Riverside Medical Center",
   },
 ];
 
@@ -35,7 +35,7 @@ const Testimonial = () => {
   return (
     <div className="flex mx-auto justify-center px-2 max-w-218 pb-10 md:pb-25">
       <div className="w-full h-full cursor-grab">
-        <p className="section-title mb-6 text-center">Testimonial</p>
+        <p className="section-title mb-6 text-center">Testimonials</p>
         <Swiper
           id="testimonialSwiper"
           spaceBetween={30}

@@ -5,10 +5,8 @@ import { Link } from "react-scroll";
 const navItems = [
   { id: 1, name: "Home", url: "introduction" },
   { id: 2, name: "About", url: "profile" },
-  { id: 3, name: "Process", url: "work-process" },
-  { id: 4, name: "Portfolio", url: "portfolio" },
-  { id: 5, name: "Blog", url: "blog" },
-  { id: 6, name: "Services", url: "services" },
+  { id: 3, name: "Guidlines", url: "work-process" },
+  { id: 6, name: "Terms and conditions", url: "services" },
 ];
 
 const handleMenuClick = () => {
@@ -54,8 +52,8 @@ const NavBar = () => {
     <div
       className={`sticky top-0 ${
         position > 50
-          ? "bg-soft-white border-b border-gray-300"
-          : "bg-[#B287D0] border-white"
+          ? "bg-white/20 backdrop-blur-md border border-white/30 shadow-md"
+          : "bg-white/20 backdrop-blur-md border border-white/30 shadow-md"
       } z-50 transition-all duration-1000`}
     >
       <div className="navbar flex justify-between mx-auto content">
@@ -91,8 +89,9 @@ const NavBar = () => {
             smooth={true}
             duration={900}
             className="flex items-center border-0 lg:max-xxl:ps-5"
-          >
-            <img src={logo} className="sm:h-14 h-[100px] w-[150px] rounded-2xl" alt="logo" />
+          ><p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold text-slate-900">
+              Dose<span className="text-[#A33397]">Vise</span>
+            </p>
           </Link>
         </div>
 
@@ -108,7 +107,7 @@ const NavBar = () => {
               smooth={true}
               duration={900}
             >
-              Contact
+              Calculation Tools
             </Link>
           </p>
         </div>

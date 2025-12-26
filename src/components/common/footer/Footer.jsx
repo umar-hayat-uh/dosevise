@@ -18,9 +18,6 @@ const Footer = () => {
       <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
         <a href="#" className="flex items-center border-0">
           <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
-          <p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">
-            Brooklyn
-          </p>
         </a>
         <div className="mx-7 max-md:my-7 text-center">
           {navItems.map((item) => (
@@ -35,18 +32,11 @@ const Footer = () => {
           ))}
         </div>
         <p className="text-[12px] sm:text-[16px]">
-          Copyright &copy; {copyrightYear} Picto.
+          Copyright &copy; {copyrightYear} Dosevise.
         </p>
       </div>
       <p className="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
-        Developed with ❤️ by{" "}
-        <a
-          href="https://www.themewagon.com"
-          className="underline font-bold"
-          target="_blank"
-        >
-          ThemeWagon
-        </a>
+         All rights reserved. Designed by {"DoseVise "}
       </p>
     </div>
   );

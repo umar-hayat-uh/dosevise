@@ -25,65 +25,65 @@ const custom_breakpoints = {
   },
 };
 
-const blogData = [
+// Updated content for Guidelines section
+const guidelinesData = [
   {
     id: 1,
     image: img1,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Designing Engaging User Interfaces for Modern Web Apps",
+    date: "Dec 2025",
+    comments: 0,
+    title: "Renal Dosing Guidelines Overview",
     link: "#!",
   },
   {
     id: 2,
     image: img2,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Tips for Effective Dashboard Layouts and Usability",
+    date: "Dec 2025",
+    comments: 0,
+    title: "Hepatic Impairment: Recommended Dose Adjustments",
     link: "#!",
   },
   {
     id: 3,
     image: img3,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "How to Visualize Data for Better Product Decisions",
+    date: "Dec 2025",
+    comments: 0,
+    title: "Pediatric Medication Safety Best Practices",
     link: "#!",
   },
   {
     id: 4,
     image: img4,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Responsive Design: Adapting to All Devices Seamlessly",
+    date: "Dec 2025",
+    comments: 0,
+    title: "Geriatric Dosing: Reducing Adverse Events",
     link: "#!",
   },
   {
     id: 5,
     image: img2,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Streamlining Workflows with UI/UX Best Practices",
+    date: "Dec 2025",
+    comments: 0,
+    title: "General Dosage Calculations: Key Considerations",
     link: "#!",
   },
   {
     id: 6,
     image: img1,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Optimizing Interface Components for Performance",
+    date: "Dec 2025",
+    comments: 0,
+    title: "QT Interval Monitoring Guidelines",
     link: "#!",
   },
 ];
 
-const Blog = () => {
+const Guidelines = () => {
   return (
-    <div className="content py-25 px-2 relative" id="blog">
+    <div className="content py-25 px-2 relative" id="guidelines">
       <div className="max-w-135 text-center mx-auto pb-17.5">
-        <p className="section-title pb-6">Blog</p>
+        <p className="section-title pb-6">Guidelines</p>
         <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
-          Check out my recent blog posts where I share insights on design,
-          development, and the latest industry trends.
+          Explore our curated clinical guidelines and best practices for safe medication dosing and patient care.
         </p>
       </div>
       <Swiper
@@ -92,10 +92,10 @@ const Blog = () => {
         pagination={{ clickable: true }}
         modules={[Pagination]}
       >
-        {blogData?.map((data, index) => (
+        {guidelinesData.map((data, index) => (
           <SwiperSlide
             key={index}
-            className="mb-10" /* pagination margin bottom to 40px */
+            className="mb-10"
             style={{ backgroundColor: "rgba(0,0,0,0)" }}
           >
             <MonoBlog data={data} key={index} />
@@ -106,4 +106,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Guidelines;

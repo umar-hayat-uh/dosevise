@@ -10,18 +10,18 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
 const addressData = [
   {
     icon: faLocationDot,
-    title: "Address",
+    title: "Head Office",
     description: "New Mexico, 31134",
   },
   {
     icon: faEnvelope,
-    title: "My Email",
-    description: "mymail@mail.com",
+    title: "Email Us",
+    description: "support@dosevise.com",
   },
   {
     icon: faPhone,
-    title: "Call Me Now",
-    description: "00-123 00000",
+    title: "Call Support",
+    description: "+1 800 555 1234",
   },
 ];
 
@@ -33,28 +33,34 @@ const Contact = () => {
         id="contact"
       >
         <div className="flex flex-col-reverse lg:gap-5 xl:gap-25.75 lg:flex-row justify-between">
+          {/* Left Info */}
           <div>
             <div>
               <p className="text-[35px] max-lg:hidden font-semibold text-nowrap text-[#132238]">
-                Let’s discuss your Project
+                Connect with Dosevise
               </p>
               <p className="text-[12px] xs:text-[14px] sm:text-lg md:text-lg max-lg:text-center pt-4 font-normal text-soft-dark">
-                I'm available for freelance work. Drop me a line if you have a
-                project you think I'd be a good fit for.
+                Have questions or need support? Our clinical team is here to assist you. Reach out for consultations, inquiries, or product guidance.
               </p>
             </div>
+
+            {/* Address Cards */}
             <div className="my-8.75 sm:max-lg:flex justify-between items-center">
               {addressData.map((item, index) => (
                 <Address item={item} key={index} />
               ))}
             </div>
+
+            {/* Social Media */}
             <div className="w-full max-lg:text-center max-md:mb-4">
               <SocialMedia />
             </div>
           </div>
+
+          {/* Contact Form */}
           <div className="w-full overflow-y-scroll py-6.5">
             <p className="text-xl mb-2 xs:text-2xl sm:text-2xl md:text-[38px] font-semibold text-[#132238] lg:hidden text-center">
-              Let’s discuss your Project
+              Connect with Dosevise
             </p>
             <Form />
           </div>

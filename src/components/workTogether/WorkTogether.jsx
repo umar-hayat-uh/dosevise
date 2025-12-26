@@ -6,11 +6,10 @@ const WorkTogether = () => {
     <div className="py-25 max-w-169 mx-auto px-2">
       <div className="text-center">
         <p className="text-white md:font-semibold text-2xl sm:text-3xl md:text-5xl pb-8">
-          Do you have a Project Idea? Let's discuss your project!
+          Ready to Simplify Medication Dosing?
         </p>
         <p className="text-[#A5ACB5] text-xs sm:text-lg font-normal text-center pb-8">
-          I'm always open to discussing new projects and creative ideas. Let's
-          connect and build something amazing together.
+          Join clinicians worldwide using Dosevise to make precise, guideline-based dosing decisions. Try our calculators or request a personalized demo.
         </p>
         <a
           href="#!"
